@@ -369,7 +369,7 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_HM06] = {gItemIcon_HM, gItemIconPalette_FightingTMHM},
     [ITEM_HM07] = {gItemIcon_HM, gItemIconPalette_WaterTMHM},
     [ITEM_HM08] = {gItemIcon_HM, gItemIconPalette_WaterTMHM},
-    [ITEM_HM09] = {gItemIcon_TM, gItemIconPalette_NormalTMHM},
+    [ITEM_HM09] = {gItemIcon_HM, gItemIconPalette_NormalTMHM},
 
     // ????????
     [ITEM_15C] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
