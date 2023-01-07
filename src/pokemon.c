@@ -7188,3 +7188,30 @@ u8 *MonSpritesGfxManager_GetSpritePtr(u8 spriteNum)
     }
     return NULL;
 }
+
+u8 GetLevelCap(void)
+{
+    u8 currentLevelCap;
+
+	if (FlagGet(FLAG_BADGE08_GET))
+        currentLevelCap = 101;
+	else if (FlagGet(FLAG_BADGE07_GET))
+        currentLevelCap = 46;
+	else if (FlagGet(FLAG_BADGE06_GET))
+        currentLevelCap = 42;
+    else if (FlagGet(FLAG_BADGE05_GET))
+        currentLevelCap = 33;
+    else if (FlagGet(FLAG_BADGE04_GET))
+        currentLevelCap = 31;
+    else if (FlagGet(FLAG_BADGE03_GET))
+        currentLevelCap = 29;
+    else if (FlagGet(FLAG_BADGE02_GET))
+        currentLevelCap = 24;
+    else if (FlagGet(FLAG_BADGE01_GET))
+        currentLevelCap = 19;
+    else
+    currentLevelCap = 15;
+
+    return currentLevelCap;
+}
+

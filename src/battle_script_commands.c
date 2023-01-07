@@ -3363,6 +3363,14 @@ static void Cmd_getexp(void)
                 gBattleScripting.getexpState = 5;
                 gBattleMoveDamage = 0; // used for exp
             }
+			else if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) >= GetLevelCap())
+            {
+                gBattleMoveDamage = 1; // If mon is above level cap, it gets 1 exp, but still gains EVs
+                MonGainEVs(&gPlayerParty[gBattleStruct->expGetterMonId], gBattleMons[gBattlerFainted].species);
+                // EVs won't be applied until next level up. TODO: Update this mechanic to match newer games
+				gBattleStruct->sentInPokes >>= 1;
+                gBattleScripting.getexpState++;
+            }
             else if (GetMonData(&gPlayerParty[gBattleStruct->expGetterMonId], MON_DATA_LEVEL) == MAX_LEVEL)
             {
                 *(&gBattleStruct->sentInPokes) >>= 1;
