@@ -92,5 +92,6 @@ void MoveDeleterChooseMoveToForget(void);
 void ItemUseCB_ReduceIV(u8 taskId, TaskFunc task);
 void ItemUseCB_IncreaseIV(u8 taskId, TaskFunc task);
 void ItemUseCB_Mints(u8 taskId, TaskFunc task);
+void CB2_ReturnToPartyMenuFromSummaryScreen(void);
 
 #endif // GUARD_PARTY_MENU_H
