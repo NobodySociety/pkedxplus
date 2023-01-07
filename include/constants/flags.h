@@ -1232,8 +1232,8 @@
 #define FLAG_HIDE_BLUE_INSIDE_LAB                                   0x499 
 #define FLAG_HIDE_RED_MTPYRE                                        0x49A 
 #define FLAG_HIDE_OAK_MUSEUM                                        0x49B 
-#define FLAG_RECEIVED_MRMIME                                           0x49C // Unused Flag
-#define FLAG_RECEIVED_JYNX                                           0x49D // Unused Flag
+#define FLAG_RECEIVED_MRMIME                                        0x49C // Unused Flag
+#define FLAG_RECEIVED_JYNX                                          0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
