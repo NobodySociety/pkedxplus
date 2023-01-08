@@ -24,6 +24,10 @@
 
 extern const u8 EventScript_RepelWoreOff[];
 
+// EWRAM vars
+EWRAM_DATA bool8 gIsFishingEncounter = 0;
+EWRAM_DATA bool8 gIsSurfingEncounter = 0;
+
 #define MAX_ENCOUNTER_RATE 2880
 
 #define NUM_FEEBAS_SPOTS 6
@@ -834,6 +838,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
             {
                 if (TryGenerateWildMon(gWildMonHeaders[headerId].waterMonsInfo, WILD_AREA_WATER, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
                 {
+					gIsSurfingEncounter = TRUE;
                     BattleSetup_StartWildBattle();
                     return TRUE;
                 }
@@ -975,6 +980,7 @@ void FishingWildEncounter(u8 rod)
     }
     IncrementGameStat(GAME_STAT_FISHING_CAPTURES);
     SetPokemonAnglerSpecies(species);
+	gIsFishingEncounter = TRUE;
     BattleSetup_StartWildBattle();
 }
 

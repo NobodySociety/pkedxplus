@@ -61,6 +61,42 @@ static const u8 sPremierBallDesc[] = _(
     "A rare BALL made\n"
     "in commemoration\n"
     "of some event.");
+	
+static const u8 sLevelBallDesc[] = _(
+    "A BALL that works\n"
+    "well on lower\n"
+    "level POKéMON.");
+
+static const u8 sLureBallDesc[] = _(
+    "A BALL that works\n"
+    "well on fished\n"
+    "up POKéMON.");
+
+static const u8 sMoonBallDesc[] = _(
+    "A BALL that works\n"
+    "well on Moon\n"
+    "Stone users.");
+
+static const u8 sFriendBallDesc[] = _(
+    "A BALL that makes\n"
+    "a POKéMON friendly\n"
+    "when caught.");
+
+static const u8 sLoveBallDesc[] = _(
+    "Works well on\n"
+    "POKéMON of the\n"
+    "opposite gender.");
+
+static const u8 sFastBallDesc[] = _(
+    "Works well on\n"
+    "very fast\n"
+    "POKéMON.");
+
+static const u8 sHeavyBallDesc[] = _(
+    "Works well on\n"
+    "very heavy\n"
+    "POKéMON.");
+
 
 // Medicine
 static const u8 sPotionDesc[] = _(

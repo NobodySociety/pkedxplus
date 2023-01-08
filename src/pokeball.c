@@ -57,6 +57,13 @@ static u16 GetBattlerPokeballItemId(u8 battlerId);
 #define GFX_TAG_TIMERBALL   55009
 #define GFX_TAG_LUXURYBALL  55010
 #define GFX_TAG_PREMIERBALL 55011
+#define GFX_TAG_LEVELBALL   55012
+#define GFX_TAG_LUREBALL    55013
+#define GFX_TAG_MOONBALL    55014
+#define GFX_TAG_FRIENDBALL  55015
+#define GFX_TAG_LOVEBALL    55016
+#define GFX_TAG_HEAVYBALL   55017
+#define GFX_TAG_FASTBALL    55018
 
 const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
 {
@@ -72,6 +79,13 @@ const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
     [BALL_TIMER]   = {gBallGfx_Timer,   384, GFX_TAG_TIMERBALL},
     [BALL_LUXURY]  = {gBallGfx_Luxury,  384, GFX_TAG_LUXURYBALL},
     [BALL_PREMIER] = {gBallGfx_Premier, 384, GFX_TAG_PREMIERBALL},
+	[BALL_LEVEL]   = {gBallGfx_Level,   384, GFX_TAG_LEVELBALL},
+    [BALL_LURE]    = {gBallGfx_Lure,    384, GFX_TAG_LUREBALL},
+    [BALL_MOON]    = {gBallGfx_Moon,    384, GFX_TAG_MOONBALL},
+    [BALL_FRIEND]  = {gBallGfx_Friend,  384, GFX_TAG_FRIENDBALL},
+    [BALL_LOVE]    = {gBallGfx_Love,    384, GFX_TAG_LOVEBALL},
+    [BALL_HEAVY]   = {gBallGfx_Heavy,   384, GFX_TAG_HEAVYBALL},
+    [BALL_FAST]    = {gBallGfx_Fast,    384, GFX_TAG_FASTBALL},
 };
 
 const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
@@ -88,6 +102,13 @@ const struct CompressedSpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
     [BALL_TIMER]   = {gBallPal_Timer,   GFX_TAG_TIMERBALL},
     [BALL_LUXURY]  = {gBallPal_Luxury,  GFX_TAG_LUXURYBALL},
     [BALL_PREMIER] = {gBallPal_Premier, GFX_TAG_PREMIERBALL},
+	[BALL_LEVEL]   = {gBallPal_Level,   GFX_TAG_LEVELBALL},
+    [BALL_LURE]    = {gBallPal_Lure,    GFX_TAG_LUREBALL},
+    [BALL_MOON]    = {gBallPal_Moon,    GFX_TAG_MOONBALL},
+    [BALL_FRIEND]  = {gBallPal_Friend,  GFX_TAG_FRIENDBALL},
+    [BALL_LOVE]    = {gBallPal_Love,    GFX_TAG_LOVEBALL},
+    [BALL_HEAVY]   = {gBallPal_Heavy,   GFX_TAG_HEAVYBALL},
+    [BALL_FAST]    = {gBallPal_Fast,    GFX_TAG_FASTBALL},
 };
 
 static const struct OamData sBallOamData =
@@ -319,6 +340,69 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
     {
         .tileTag = GFX_TAG_PREMIERBALL,
         .paletteTag = GFX_TAG_PREMIERBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_LEVELBALL,
+        .paletteTag = GFX_TAG_LEVELBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_LUREBALL,
+        .paletteTag = GFX_TAG_LUREBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_MOONBALL,
+        .paletteTag = GFX_TAG_MOONBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_FRIENDBALL,
+        .paletteTag = GFX_TAG_FRIENDBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_LOVEBALL,
+        .paletteTag = GFX_TAG_LOVEBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_HEAVYBALL,
+        .paletteTag = GFX_TAG_HEAVYBALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+	{
+        .tileTag = GFX_TAG_FASTBALL,
+        .paletteTag = GFX_TAG_FASTBALL,
         .oam = &sBallOamData,
         .anims = sBallAnimSequences,
         .images = NULL,
