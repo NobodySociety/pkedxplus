@@ -655,7 +655,7 @@ LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
 	.string "I'm going to look all over the place\n"
 	.string "because I want different POKéMON.\p"
 	.string "If I find any cute POKéMON, I'll use\n"
-	.string "FALSE SWIPE to help catch them with\n"
+	.string "FALSE SWIPE to help catch them with\p"
 	.string "POKé BALLS!$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanGivePokeBalls::
@@ -679,7 +679,7 @@ LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
 	.string "I'm going to explore all over the place\n"
 	.string "to find different POKéMON.\p"
 	.string "If I find any cool POKéMON, you bet\n"
-	.string "I'll try to get them with POKé BALLS\n"
+	.string "I'll try to get them with POKé BALLS\p"
 	.string "with help from FALSE SWIPE.$"
 
 LittlerootTown_ProfessorBirchsLab_EventScript_BrendanNoRoomForPokeBalls::
