@@ -361,6 +361,7 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_TM48] = {gItemIcon_TM, gItemIconPalette_PsychicTMHM},
     [ITEM_TM49] = {gItemIcon_TM, gItemIconPalette_DarkTMHM},
     [ITEM_TM50] = {gItemIcon_TM, gItemIconPalette_FireTMHM},
+	[ITEM_TM51] = {gItemIcon_TM, gItemIconPalette_SteelTMHM},
     [ITEM_HM01] = {gItemIcon_HM, gItemIconPalette_NormalTMHM},
     [ITEM_HM02] = {gItemIcon_HM, gItemIconPalette_FlyingTMHM},
     [ITEM_HM03] = {gItemIcon_HM, gItemIconPalette_WaterTMHM},
@@ -371,8 +372,6 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_HM08] = {gItemIcon_HM, gItemIconPalette_WaterTMHM},
     [ITEM_HM09] = {gItemIcon_HM, gItemIconPalette_NormalTMHM},
 
-    // ????????
-    [ITEM_15C] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     // FireRed/LeafGreen key items
     [ITEM_OAKS_PARCEL] = {gItemIcon_OaksParcel, gItemIconPalette_OaksParcel},
     [ITEM_POKE_FLUTE] = {gItemIcon_PokeFlute, gItemIconPalette_PokeFlute},

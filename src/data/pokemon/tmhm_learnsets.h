@@ -23,6 +23,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -43,6 +44,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -66,6 +68,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -91,6 +94,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -115,6 +119,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -143,6 +148,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM47_STEEL_WING)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM02_FLY)
                                         | TMHM(HM04_STRENGTH)
@@ -167,6 +173,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -192,6 +199,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -220,6 +228,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -275,6 +284,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -398,6 +408,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM02_FLY)),
 
     [SPECIES_FEAROW]      = TMHM_LEARNSET(TMHM(TM06_TOXIC)
@@ -416,6 +427,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM02_FLY)),
 
     [SPECIES_EKANS]       = TMHM_LEARNSET(TMHM(TM06_TOXIC)
@@ -1047,6 +1059,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -1070,6 +1083,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -1179,6 +1193,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM49_SNATCH)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
@@ -1208,6 +1223,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM49_SNATCH)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
@@ -1938,6 +1954,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM02_FLY)),
 
@@ -2287,6 +2304,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -2312,6 +2330,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -2428,6 +2447,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -2456,6 +2476,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -2929,6 +2950,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -3028,6 +3050,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -3187,6 +3210,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM05_FLASH)),
 
     [SPECIES_FLAREON]     = TMHM_LEARNSET(TMHM(TM05_ROAR)
@@ -3659,6 +3683,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM48_SKILL_SWAP)
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM02_FLY)
                                         | TMHM(HM03_SURF)
@@ -3686,6 +3711,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
@@ -3707,6 +3733,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -3732,6 +3759,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -3753,6 +3781,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)),
 
     [SPECIES_QUILAVA]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_PUNCH)
@@ -3774,6 +3803,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -3799,6 +3829,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -3823,6 +3854,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM07_WATERFALL)
@@ -3849,6 +3881,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -3880,6 +3913,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -4978,6 +5012,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -5118,6 +5153,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -5163,6 +5199,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -5193,6 +5230,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM49_SNATCH)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -6165,6 +6203,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -6191,6 +6230,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -6221,6 +6261,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -6243,6 +6284,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -6267,6 +6309,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -6294,6 +6337,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM50_OVERHEAT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -6316,6 +6360,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -6341,6 +6386,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -6370,6 +6416,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)
@@ -6623,6 +6670,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -6647,6 +6695,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -6674,6 +6723,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -6695,6 +6745,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM42_FACADE)
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
@@ -6717,6 +6768,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
@@ -6738,6 +6790,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
@@ -6793,6 +6846,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM49_SNATCH)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM05_FLASH)),
 
     [SPECIES_BRELOOM]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_PUNCH)
@@ -6817,6 +6871,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM49_SNATCH)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -7294,6 +7349,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -7322,6 +7378,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM03_SURF)
                                         | TMHM(HM04_STRENGTH)
@@ -7964,6 +8021,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -8037,6 +8095,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM02_FLY)),
 
     [SPECIES_ALTARIA]     = TMHM_LEARNSET(TMHM(TM02_DRAGON_CLAW)
@@ -8065,6 +8124,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM47_STEEL_WING)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM02_FLY)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -8170,6 +8230,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -8203,6 +8264,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -8237,6 +8299,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -8492,6 +8555,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
                                         | TMHM(TM49_SNATCH)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)
@@ -8605,6 +8669,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
                                         | TMHM(TM46_THIEF)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -8859,6 +8924,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM06_ROCK_SMASH)),
 
@@ -8882,6 +8948,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM09_SECRET_POWER)
                                         | TMHM(TM44_REST)
                                         | TMHM(TM45_ATTRACT)
+										| TMHM(TM51_FALSE_SWIPE)
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
@@ -9544,6 +9611,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM12_TAUNT)
                                             | TMHM(TM46_THIEF)
                                             | TMHM(TM41_TORMENT)
+											| TMHM(TM51_FALSE_SWIPE)
                                             | TMHM(TM06_TOXIC)),
 
     [SPECIES_TOGEKISS]    = TMHM_LEARNSET(TMHM(TM40_AERIAL_ACE)
@@ -9605,6 +9673,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM12_TAUNT)
                                             | TMHM(TM46_THIEF)
                                             | TMHM(TM41_TORMENT)
+											| TMHM(TM51_FALSE_SWIPE)
                                             | TMHM(TM06_TOXIC)),
 
     [SPECIES_MAMOSWINE]   = TMHM_LEARNSET(TMHM(TM45_ATTRACT)
@@ -9668,6 +9737,7 @@ const u32 gTMHMLearnsets[][2] =
                                             | TMHM(TM46_THIEF)
                                             | TMHM(TM24_THUNDERBOLT)
                                             | TMHM(TM41_TORMENT)
+											| TMHM(TM51_FALSE_SWIPE)
                                             | TMHM(TM06_TOXIC)),
 
     [SPECIES_DUSKNOIR]    = TMHM_LEARNSET(TMHM(TM45_ATTRACT)

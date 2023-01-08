@@ -4056,6 +4056,18 @@ const struct Item gItems[] =
         .importance = 1,
     },
 
+	[ITEM_TM51_FALSE_SWIPE] =
+    {
+        .name = _("TM51"),
+        .itemId = ITEM_TM51_FALSE_SWIPE,
+        .price = 3000,
+        .description = sTM51Desc,
+        .pocket = POCKET_TM_HM,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
+    },
+
     [ITEM_HM01_CUT] =
     {
         .name = _("HM01"),
@@ -4162,17 +4174,6 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-    },
-
-    [ITEM_15C] =
-    {
-        .name = _("????????"),
-        .itemId = ITEM_NONE,
-        .price = 0,
-        .description = sDummyDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 
 // FireRed/LeafGreen key items
