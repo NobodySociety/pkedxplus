@@ -64,6 +64,7 @@ enum
     MENU_ACTION_RETIRE_FRONTIER,
     MENU_ACTION_PYRAMID_BAG,
     MENU_ACTION_DEBUG,
+	MENU_ACTION_CHEAT,
 };
 
 // Save status
@@ -105,6 +106,7 @@ static bool8 StartMenuLinkModePlayerNameCallback(void);
 static bool8 StartMenuBattlePyramidRetireCallback(void);
 static bool8 StartMenuBattlePyramidBagCallback(void);
 static bool8 StartMenuDebugCallback(void);
+static bool8 StartMenuCheatCallback(void);
 
 // Menu callbacks
 static bool8 SaveStartCallback(void);
@@ -157,6 +159,7 @@ static const struct WindowTemplate sPyramidFloorWindowTemplate_2 = {0, 1, 1, 0xA
 static const struct WindowTemplate sPyramidFloorWindowTemplate_1 = {0, 1, 1, 0xC, 4, 0xF, 8};
 
 static const u8 gText_MenuDebug[] = _("DEBUG");
+static const u8 gText_MenuCheat[] = _("CHEAT");
 
 static const struct MenuAction sStartMenuItems[] =
 {
@@ -174,6 +177,7 @@ static const struct MenuAction sStartMenuItems[] =
     {gText_MenuRetire, {.u8_void = StartMenuBattlePyramidRetireCallback}},
     {gText_MenuBag, {.u8_void = StartMenuBattlePyramidBagCallback}},
     {gText_MenuDebug, {.u8_void = StartMenuDebugCallback}},
+	{gText_MenuCheat, {.u8_void = StartMenuCheatCallback}},
 };
 
 static const struct BgTemplate sBgTemplates_LinkBattleSave[] =
@@ -218,6 +222,7 @@ static void BuildStartMenuActions(void);
 static void AddStartMenuAction(u8 action);
 static void BuildNormalStartMenu(void);
 static void BuildDebugStartMenu(void);
+static void BuildCheatStartMenu(void);
 static void BuildSafariZoneStartMenu(void);
 static void BuildLinkModeStartMenu(void);
 static void BuildUnionRoomStartMenu(void);
@@ -247,6 +252,7 @@ static void ShowSaveInfoWindow(void);
 static void RemoveSaveInfoWindow(void);
 static void HideStartMenuWindow(void);
 static void HideStartMenuDebug(void);
+static void HideStartMenuCheat(void);
 
 void SetDexPokemonPokenavFlags(void) // unused
 {
@@ -287,6 +293,11 @@ static void BuildStartMenuActions(void)
     else
     {
         BuildDebugStartMenu();
+    }
+#elif defined(TX_CHEAT) && TX_CHEAT_MENU_OPTION
+	else
+    {
+        BuildCheatStartMenu();
     }
 #else
     else
@@ -347,6 +358,30 @@ static void BuildDebugStartMenu(void)
     AddStartMenuAction(MENU_ACTION_SAVE);
     AddStartMenuAction(MENU_ACTION_OPTION);
     AddStartMenuAction(MENU_ACTION_DEBUG);
+}
+
+static void BuildCheatStartMenu(void)
+{    
+    if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
+    {
+        AddStartMenuAction(MENU_ACTION_POKEDEX);
+    }
+    if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
+    {
+        AddStartMenuAction(MENU_ACTION_POKEMON);
+    }
+
+    AddStartMenuAction(MENU_ACTION_BAG);
+
+    if (FlagGet(FLAG_SYS_POKENAV_GET) == TRUE)
+    {
+        AddStartMenuAction(MENU_ACTION_POKENAV);
+    }
+
+    AddStartMenuAction(MENU_ACTION_PLAYER);
+    AddStartMenuAction(MENU_ACTION_SAVE);
+    AddStartMenuAction(MENU_ACTION_OPTION);
+    AddStartMenuAction(MENU_ACTION_CHEAT);
 }
 
 static void BuildSafariZoneStartMenu(void)
@@ -631,6 +666,7 @@ static bool8 HandleStartMenuInput(void)
         if (gMenuCallback != StartMenuSaveCallback
             && gMenuCallback != StartMenuExitCallback
             && gMenuCallback != StartMenuDebugCallback
+			&& gMenuCallback != StartMenuCheatCallback
             && gMenuCallback != StartMenuSafariZoneRetireCallback
             && gMenuCallback != StartMenuBattlePyramidRetireCallback)
         {
@@ -778,6 +814,18 @@ static bool8 StartMenuDebugCallback(void)
     return TRUE;
 }
 
+static bool8 StartMenuCheatCallback(void)
+{
+    RemoveExtraStartMenuWindows();
+    HideStartMenuCheat(); // Hide start menu without enabling movement
+
+    #ifdef TX_CHEAT
+        Cheat_ShowMainMenu();
+    #endif
+
+    return TRUE;
+}
+
 static bool8 StartMenuSafariZoneRetireCallback(void)
 {
     RemoveExtraStartMenuWindows();
@@ -788,6 +836,13 @@ static bool8 StartMenuSafariZoneRetireCallback(void)
 }
 
 static void HideStartMenuDebug(void)
+{
+    PlaySE(SE_SELECT);
+    ClearStdWindowAndFrame(GetStartMenuWindowId(), TRUE);
+    RemoveStartMenuWindow();
+}
+
+static void HideStartMenuCheat(void)
 {
     PlaySE(SE_SELECT);
     ClearStdWindowAndFrame(GetStartMenuWindowId(), TRUE);
